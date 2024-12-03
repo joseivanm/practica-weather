@@ -1,0 +1,75 @@
+/* gallery.component.css */
+
+/* Estilo general para la galería */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; 
+  }
+  
+  
+  .card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+  .card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+  .card-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .card-content p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+
+  .card-content p:last-child {
+    font-weight: bold;
+    color: #007bff; /* Azul para destacar la temperatura */
+  }
+  
+
+  @media (max-width: 768px) {
+    .gallery-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  

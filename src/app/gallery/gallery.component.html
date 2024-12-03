@@ -1,0 +1,14 @@
+<div class="gallery-container">
+    <div class="card" *ngFor="let city of cities">
+      <img [src]="city.image" alt="{{ city.name }}">
+      <div class="card-content">
+        <h3>{{ city.name }}</h3>
+        <p>{{ city.description }}</p>
+        <p>Temperatura: {{ city.temperature }}°C</p>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
